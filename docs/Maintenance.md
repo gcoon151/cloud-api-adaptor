@@ -40,7 +40,7 @@ features - by the listing below.
 | AWS | Best effort | @EmmEff, @snir911 | Limited development/maintenance. Daily e2e CI. Works with non-TEE and AMD SEV-SNP instances. |
 | GCP | Best effort| @EmmEff, @beraldoleal, @snir911 | No upstream CI. Limited development/maintenance. Documentation exists. Works with SEV-SNP and TDX instances |
 | IBM Cloud PowerVS | Not maintained |  | No upstream CI. Documentation exists. |
-| IBM Cloud VPC | Not maintained |  | No upstream CI.  No maintainers. Documentation exists. |
+| IBM Cloud VPC | Best effort | @gcoon151 | No upstream CI. Documentation exists. |
 | | | | |
 | **Architectures** | | | |
 | amd64 | Supported | [@confidential-containers/peer-pod-maintainers](https://github.com/orgs/confidential-containers/teams/peer-pod-maintainers) | Tested in CI across multiple providers |
@@ -51,6 +51,7 @@ features - by the listing below.
 | **TEE Platforms** | | | |
 | Azure CVM with vTPM | Supported |  | Dedicated podvm image built in CI via `az-cvm-vtpm` TEE platform |
 | IBM Secure Execution (s390x) | Best effort | @stevenhorsman, @BbolroC | Supported via libvirt/s390x and IBM Cloud VPC. No upstream TEE CI. |
+| Intel TDX (IBM Cloud VPC) | Best effort | TBD (Intel) | Peer pods only, via the IBM Cloud VPC provider. No upstream TEE CI. |
 | AMD SEV-SNP (AWS) | Not maintained |  | CI exists via AWS e2e tests but TEE-specific validation is limited |
 | GCP TDX / SEV / SEV-SNP | Not maintained | | Supported via GCP provider `ConfidentialType` config. No upstream CI. No maintainers. |
 | | | | |
